@@ -1,0 +1,13 @@
+#!/bin/bash
+
+(
+git clone --depth 1 -b master https://github.com/jwrdegoede/linux-sunxi.git /linux-sunxi
+
+cp config /linux-sunxi/.config
+
+cd linux-sunxi || exit 1
+
+time make -j "$(nproc)" deb-pkg LOCALVERSION=-brimstone
+) 1>&2
+
+tar -cf - ./*.deb
