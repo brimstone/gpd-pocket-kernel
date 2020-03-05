@@ -18,6 +18,26 @@ Description: Linux kernel headers for 5.2.0-rc7-brimstone on amd64
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-5.6.0-rc3-brimstone
+Architecture: amd64
+Version: 5.6.0-rc3-brimstone-1
+Priority: optional
+Section: kernel
+Source: linux-5.6.0-rc3-brimstone
+Maintainer: root <root@30eaabfc6342>
+Installed-Size: 46628
+Filename: ./linux-headers-5.6.0-rc3-brimstone_5.6.0-rc3-brimstone-1_amd64.deb
+Size: 7489700
+MD5sum: 7620f0cc585223751df2a64f39889543
+SHA1: e3d3935c0686f8a490eb0002fb6fa47036f68f82
+SHA256: 73efef0752054987e22b83dbbf92efd3cf4f41f3f84d80eb4f316bf3765899d4
+SHA512: ea045b4134a4addd64654b2ac75cd63a3c616ab55198401f1c4266c38b3ad9c474efa59075bbe78748ad96a2831658c55b82acf90e19d700fa44ba7d366facdf
+Homepage: http://www.kernel.org/
+Description: Linux kernel headers for 5.6.0-rc3-brimstone on amd64
+ This package provides kernel header files for 5.6.0-rc3-brimstone on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-image-5.2.0-rc7-brimstone
 Architecture: amd64
 Version: 5.2.0-rc7-brimstone-1
@@ -37,6 +57,25 @@ Description: Linux kernel, version 5.2.0-rc7-brimstone
  This package contains the Linux kernel, modules and corresponding other
  files, version: 5.2.0-rc7-brimstone.
 
+Package: linux-image-5.6.0-rc3-brimstone
+Architecture: amd64
+Version: 5.6.0-rc3-brimstone-1
+Priority: optional
+Section: kernel
+Source: linux-5.6.0-rc3-brimstone
+Maintainer: root <root@30eaabfc6342>
+Installed-Size: 255364
+Filename: ./linux-image-5.6.0-rc3-brimstone_5.6.0-rc3-brimstone-1_amd64.deb
+Size: 51527892
+MD5sum: 6ed467e5ffd3fb0eba38a33ab3dd583a
+SHA1: 3dd1e9430aebdd8bd6ccc6154c92af7ce5f72510
+SHA256: 38dcabb472ef4fcd4161810cd014fb2f03d0f2cde25a0a2360802b486fddf351
+SHA512: 77b00e7a2d3e952a162241fed6fae91a2badd495b2a4966564192a110c3c7393f07ae49b5870f7564e562f4e3736913a902aa8d5e2c4a131ec7e780ac740e45d
+Homepage: http://www.kernel.org/
+Description: Linux kernel, version 5.6.0-rc3-brimstone
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 5.6.0-rc3-brimstone.
+
 Package: linux-libc-dev
 Architecture: amd64
 Version: 5.2.0-rc7-brimstone-1
@@ -52,6 +91,27 @@ MD5sum: f574b46c985d1052948a38152b6e8cb7
 SHA1: ec734b4de679b2f930838544ae7b12ad7a4d4ab1
 SHA256: 5dd7290fda094ce7be94703f4e8ab7364f35e730e0717ffa347e93407b094042
 SHA512: 0fcb552354b60134898bf8c6d23a017aee96d83ffcccf2a4cb00f01a4c4cba3da7140f9a6e5b806b14c71e066e27aae93c88f9fad56336c849f68d502f52ebd7
+Homepage: http://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 5.6.0-rc3-brimstone-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux-5.6.0-rc3-brimstone
+Maintainer: root <root@30eaabfc6342>
+Installed-Size: 5606
+Provides: linux-kernel-headers
+Filename: ./linux-libc-dev_5.6.0-rc3-brimstone-1_amd64.deb
+Size: 1082184
+MD5sum: 0142cbbbd01466dd8b034d4542a58971
+SHA1: d97e9df9e2d6875dbb35f640f85661702272dc71
+SHA256: a38cb3144a31d4b95a93a660b22cc432927ac3ae65c718319ca70ebe85d8230e
+SHA512: edcf3a5003fa097b2fb1f380335258392b9bc5717cd45cebe8608e71c1c78ad084539ea024a25b3582faa95500346666aae5509347653d7dd0067d63fb673d07
 Homepage: http://www.kernel.org/
 Description: Linux support headers for userspace development
  This package provides userspaces headers from the Linux kernel.  These headers
